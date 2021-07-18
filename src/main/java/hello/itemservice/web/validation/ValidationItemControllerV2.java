@@ -154,7 +154,7 @@ public class ValidationItemControllerV2 {
     public String addItemV4(@ModelAttribute Item item, BindingResult bindingResult, RedirectAttributes redirectAttributes, Model model) {
 
         //Empty, 공백같은 단순한 기능 제공
-        ValidationUtils.rejectIfEmptyOrWhitespace(bindingResult, "itemNAme", "required");
+        ValidationUtils.rejectIfEmptyOrWhitespace(bindingResult, "itemName", "required");
         //검증 로직
         /*if (!StringUtils.hasText(item.getItemName())) {
             bindingResult.rejectValue("itemName", "required", null);
